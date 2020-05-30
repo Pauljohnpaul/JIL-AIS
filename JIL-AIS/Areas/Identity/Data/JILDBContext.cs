@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using JIL_AIS.Areas.Identity.Data;
+using JIL_AIS.Models.Domain;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,10 @@ namespace JIL_AIS.Areas.Identity.Data
             : base(options)
         {
         }
+
+        #region Tables
+        public DbSet<Member> Members { get; set; }
+        #endregion
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

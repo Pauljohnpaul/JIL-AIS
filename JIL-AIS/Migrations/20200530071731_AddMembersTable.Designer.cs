@@ -4,14 +4,16 @@ using JIL_AIS.Areas.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JIL_AIS.Migrations
 {
     [DbContext(typeof(JILDBContext))]
-    partial class JILDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200530071731_AddMembersTable")]
+    partial class AddMembersTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
