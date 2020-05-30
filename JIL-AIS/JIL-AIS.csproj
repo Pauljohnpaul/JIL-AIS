@@ -6,6 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\assets\vendors\general\dropzone\.idea\encodings.xml" />
+    <Content Include="wwwroot\assets\vendors\general\dropzone\.idea\modules.xml" />
+    <Content Include="wwwroot\assets\vendors\general\dropzone\.idea\vcs.xml" />
+    <Content Include="wwwroot\assets\vendors\general\dropzone\.idea\workspace.xml" />
+    <Content Include="wwwroot\assets\vendors\general\markdown\node_modules\nopt\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
@@ -13,7 +21,34 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.9.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\vendors\general\bootstrap-select\.github\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\assets\vendors\general\bootstrap-select\.github\move.yml" />
+    <None Include="wwwroot\assets\vendors\general\clipboard\.github\issue_template.md" />
+    <None Include="wwwroot\assets\vendors\general\dropzone\.idea\github-dropzone.iml" />
+    <None Include="wwwroot\assets\vendors\general\handlebars\node_modules\.bin\uglifyjs" />
+    <None Include="wwwroot\assets\vendors\general\handlebars\node_modules\.bin\uglifyjs.cmd" />
+    <None Include="wwwroot\assets\vendors\general\jquery-form\.circleci\config.yml" />
+    <None Include="wwwroot\assets\vendors\general\jquery-form\.github\issue_template.md" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\.bin\nopt" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\.bin\nopt.cmd" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\nopt\.npmignore" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\nopt\bin\nopt.js" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\nopt\examples\my-program.js" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\nopt\lib\nopt.js" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\nopt\LICENSE" />
+    <None Include="wwwroot\assets\vendors\general\markdown\node_modules\nopt\README.md" />
+    <None Include="wwwroot\assets\vendors\general\summernote\.github\CODE_OF_CONDUCT.md" />
+    <None Include="wwwroot\assets\vendors\general\summernote\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\assets\vendors\general\summernote\.github\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\assets\vendors\general\summernote\.github\PULL_REQUEST_TEMPLATE.md" />
   </ItemGroup>
 
 
