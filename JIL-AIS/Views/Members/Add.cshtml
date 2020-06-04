@@ -1,0 +1,212 @@
+﻿@{
+    ViewData["Title"] = "Add Member";
+}
+@section  Styles{
+    <style>
+        #taAdrss{ resize: none; }
+        .kt-avatar .kt-avatar__holder{ width: 250px !important; height: 250px; }
+        .kt-avatar.kt-avatar--circle .kt-avatar__upload { right: 25px; top: 15px; }
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="row row-full-height">
+            <div class="col-md-12">
+                <div class="kt-portlet">
+                    <div class="kt-portlet__head">
+                        <div class="kt-portlet__head-label">
+                            <h3 class="kt-portlet__head-title">
+                                Add Member
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!--begin::Form-->
+                    <form class="kt-form kt-form--label-right">
+                        <div class="kt-portlet__body">
+                            <div class="col-md-12 p-0">
+                                <h3 class="kt-section__title">Personal Information:</h3>
+                                <div class="form-group row">
+                                    <div class="col-lg-6">
+                                        <div class="col-md-8 p-0">
+                                            <div class="col-md-12 p-0">
+                                                <div class="form-group">
+                                                    <label for="txtLstNme">Last name:</label>
+                                                    <input type="text" class="form-control form-control-sm" id="txtLstNme">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <div class="form-group">
+                                                    <label for="txtFrstNme">First name:</label>
+                                                    <input type="text" class="form-control form-control-sm" id="txtFrstNme">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <div class="form-group">
+                                                    <label for="txtFrstNme">Middle name:</label>
+                                                    <input type="text" class="form-control form-control-sm" id="txtMdleNme">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <div class="form-group">
+                                                    <label>Gender</label>
+                                                    <div class="kt-radio-inline">
+                                                        <label class="kt-radio">
+                                                            <input type="radio" name="rdGndr" id="rdMale" value="MALE"> Male
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="kt-radio">
+                                                            <input type="radio" name="rdGndr" id="rdFemale" value="FEMALE"> Female
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <div class="form-group">
+                                                    <label for="txtBday">Birthday:</label>
+                                                    <input type="text" class="form-control form-control-sm" id="txtBday">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <div class="form-group">
+                                                    <label>Civil Status</label>
+                                                    <div class="kt-radio-inline">
+                                                        <label class="kt-radio">
+                                                            <input type="radio" name="rdCvStts" id="rdbSngle" value="SINGLE"> Single
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="kt-radio">
+                                                            <input type="radio" name="rdCvStts" id="rdbMrrd" value="MARRIED"> Married
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="kt-radio">
+                                                            <input type="radio" name="rdCvStts" id="rdbWdw" value="WIDOW"> Widow
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <div class="form-group">
+                                                    <label for="txtOccptn">Occupation:</label>
+                                                    <input type="text" class="form-control form-control-sm" id="txtOccptn">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 text-center">
+                                        <div class="kt-avatar kt-avatar--outline kt-avatar--circle" id="kt_apps_user_add_avatar">
+                                            <div class="kt-avatar__holder" @*style="background-image: url(&quot;http://keenthemes.com/metronic/preview/default/custom/user/assets/media/users/100_1.jpg&quot;);"*@></div>
+                                            <label class="kt-avatar__upload" data-toggle="kt-tooltip" title="" data-original-title="Change avatar">
+                                                <i class="fa fa-pen"></i>
+                                                <input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg" id="pfAvatar">
+                                            </label>
+                                            <span class="kt-avatar__cancel" data-toggle="kt-tooltip" title="" data-original-title="Cancel avatar">
+                                                <i class="fa fa-times"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kt-separator kt-separator--border-dashed kt-separator--space-sm"></div>
+                            <div class="col-md-12 p-0 mt-2">
+                                <h3 class="kt-section__title">Contact Information:</h3>
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="txtTlpNp">Residence Telephone No:</label>
+                                            <input type="text" class="form-control form-control-sm" id="txtTlpNo">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="txtCpNo">Cell Phone No:</label>
+                                            <input type="text" class="form-control form-control-sm" id="txtCpNo">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="txtEmlAdd">Email Address:</label>
+                                            <input type="text" class="form-control form-control-sm" id="txtEmlAdd">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="taAdrss">Complete Address (Current)</label>
+                                            <textarea class="form-control" id="taAdrss" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kt-separator kt-separator--border-dashed kt-separator--space-sm"></div>
+                            <div class="col-md-12 p-0 mt-2">
+                                <h3 class="kt-section__title">Life Group Information:</h3>
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Do you attend a life group></label>
+                                            <div class="kt-radio-inline">
+                                                <label class="kt-radio">
+                                                    <input type="radio" name="rdAttndLg" id="rdAttendingLg" value="YES"> Yes
+                                                    <span></span>
+                                                </label>
+                                                <label class="kt-radio">
+                                                    <input type="radio" name="rdAttndLg" id="rdNtAttendingLg" value="NO"> No
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="txtLgLdr">Name of Life Group Leader:</label>
+                                            <input type="text" class="form-control form-control-sm" id="txtLgLdr">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Membership Profile:</label>
+                                            <div class="kt-radio-inline">
+                                                <label class="kt-radio">
+                                                    <input type="radio" name="rdMmbrshpPrfle" id="rdLGAM" value="LGAM"> LGAM
+                                                    <span></span>
+                                                </label>
+                                                <label class="kt-radio">
+                                                    <input type="radio" name="rdMmbrshpPrfle" id="rdWSAM" value="WSAM"> WSAM
+                                                    <span></span>
+                                                </label>
+                                                <label class="kt-radio">
+                                                    <input type="radio" name="rdMmbrshpPrfle" id="rdWSAMLGAM" value="WSAMLGAM"> WSAM/LGAM
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="kt-portlet__foot">
+                            <div class="kt-form__actions">
+                                <div class="row">
+                                    <div class="col-2">
+                                    </div>
+                                    <div class="col-10">
+                                        <button type="reset" class="btn btn-success">Submit</button>
+                                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/viewmodel/members/members-form.js" type="text/javascript"></script>
+}
